@@ -1,0 +1,8 @@
+comment: Run MD on H3O+
+md_workdir: ./demo/md-H3O
+molecule:
+  use_pbc: true
+  molecule_path: ./demo/H3O.pdb
+log_every_n_steps: 5
+n_steps: 1000
+total_charge: 1
