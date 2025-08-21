@@ -98,6 +98,6 @@ Definitions:
 - Academic Use: Usage by educational institutions, students, and non-profit research projects.
 - Commercial Use: Usage for any profit-making activity or by commercial entities.
 
-For more information or to obtain a commercial license, please contact us at [your contact information].
+For more information or to obtain a commercial license, please contact us at license@moleculemind.com
 
-Full License Text: [Link to License Document]
+Full License Text: [TODO: Link to License Document]
