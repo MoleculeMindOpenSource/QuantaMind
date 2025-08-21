@@ -65,7 +65,7 @@ To ensure compatibility and reproducibility, it is recommended to use the follow
 
 ## Running QuantaMind MD Simulation
 
-**The demo code simulates for only 500 fs. It takes less than a minute to run on one A100 GPU (80GB memory), or around 6 minutes with CPU-only on 28 CPU cores. To replicate the results in the manuscript, you need to run the simulation on much longer time scale.**
+**The demo code simulates for only 500 fs. It takes less than a minute to run on one A100 GPU (80GB memory), or around 6 minutes with CPU-only on 28 CPU cores. To replicate the results in the manuscript, you need to run the simulation on a much longer time scale.**
 
 After installing the Python environment, run 
 
