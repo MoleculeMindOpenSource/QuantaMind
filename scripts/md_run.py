@@ -197,7 +197,6 @@ def plot_temperature(data):
     plt.xlabel('t [fs]')
     plt.legend()
     plt.tight_layout()
-    plt.show()
     plt.savefig(os.path.join(cfg.md_workdir, "temperature.png"))
 
 plot_temperature(data)

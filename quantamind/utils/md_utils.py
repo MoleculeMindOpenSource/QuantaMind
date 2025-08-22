@@ -156,8 +156,8 @@ def create_md_neighborlist(cfg: MDConfig):
     return md_neighborlist
 
 def create_md_calculator(cfg: MDConfig, md_neighborlist):
-    param_yaml_file = "./quantamind_hyper_params.yaml"
-    model_param_file = "./quantamind_example_parameters.pth"
+    param_yaml_file = "./demo/quantamind_hyper_params.yaml"
+    model_param_file = "./demo/quantamind_example_parameters.pth"
     if not (osp.exists(param_yaml_file) and osp.exists(model_param_file)):
         err_msg = f"Required files {param_yaml_file} and/or {model_param_file} not found, please make sure you have demo_data.zip unziped and move it to the QuantaMind folder."
         print(err_msg)

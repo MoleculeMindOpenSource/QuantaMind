@@ -19,16 +19,27 @@ git clone https://github.com/MoleculeMindOpenSource/QuantaMind.git
 cd ./QuantaMind
 ```
 
-Then unzip `demo_data.zip` (**This file is currently only available for reviewers.**) and put all files in the `QuantaMind` folder.
+Then unzip `demo_data.zip` (**This file is currently only available for reviewers.**) and put all files in the `./demo` folder.
 
 ### Install Python Environment
 To ensure compatibility and reproducibility, it is recommended to use the following Python environment setup. Follow the steps below to replicate the environment we used for this project:
 
-1. **Install Python 3.8.20**
+1. **Set Up a Virtual Environment with Python 3.8.20**
+
+    Depending on you, you can use either conda (step 1.1) or venv (step 1.2) to set up the environment.
+
+    1.1 Use conda
+
+    You can use [conda](https://www.anaconda.com/docs/getting-started/miniconda/install) to manage your python environment.
+
+    ```bash
+    conda create -n quantamind python==3.8.20 -y
+    conda activate quantamind
+    ```
+    
+    1.2 Use venv
 
    Ensure you have Python version 3.8.20 installed. You can download it from [python.org](https://www.python.org/downloads/release/python-3820/).
-
-2. **Set Up a Virtual Environment**
 
    Create and activate a virtual environment to manage dependencies separately from your system Python.
 
@@ -37,9 +48,8 @@ To ensure compatibility and reproducibility, it is recommended to use the follow
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
    ```
 
-    Alternatively, you can use a [conda](https://www.anaconda.com/docs/getting-started/miniconda/install) environment instead.
 
-3. **Install PyTorch 1.12.1**
+2. **Install PyTorch 1.12.1**
 
     **Linux and Windows**
 
@@ -57,13 +67,13 @@ To ensure compatibility and reproducibility, it is recommended to use the follow
     pip install torch==1.12.1
     ```
 
-4. **Install PyG**
+3. **Install PyG**
     Install [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/2.5.2/)
     ```bash
     pip install torch_geometric==2.5.2
     ```
 
-5. **Install the remaining packages**
+4. **Install the remaining packages**
 
     Finally, install the remaining packages using pip
 
