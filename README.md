@@ -42,9 +42,15 @@ To ensure compatibility and reproducibility, it is recommended to use the follow
 
     The following command installs PyTorch 1.12.1 with CUDA 11.6 support. Adjust the command if your CUDA version is different or if you want to install it CPU-only. Check [Pytorch Official Website](https://pytorch.org/) for details.
 
+    **Linux and Windows**
     ```bash
     CUDA=cu116 # cpu cu102 cu113 cu116 or rocm5.1.1
     pip install torch==1.12.1+${CUDA} --extra-index-url https://download.pytorch.org/whl/${CUDA}
+    ```
+
+    **OSX**
+    ```bash
+    pip install torch==1.12.1
     ```
 
 4. **Install PyG**
