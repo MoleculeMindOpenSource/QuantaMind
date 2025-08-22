@@ -6,7 +6,8 @@ This is the offical code for the research article "QuantaMind MD enables protein
 ## Table of Contents
 1. [Installation](#installation)
 2. [Running QuantaMind MD Simulation](#running-quantamind-md-simulation)
-3. [License](#license)
+3. [FAQ](#faq)
+4. [License](#license)
 
 ## Installation
 
@@ -36,7 +37,7 @@ To ensure compatibility and reproducibility, it is recommended to use the follow
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
    ```
 
-    Alternatively, you can use a conda environment instead.
+    Alternatively, you can use a [conda](https://www.anaconda.com/docs/getting-started/miniconda/install) environment instead.
 
 3. **Install PyTorch 1.12.1**
 
@@ -67,9 +68,16 @@ To ensure compatibility and reproducibility, it is recommended to use the follow
     Finally, install the remaining packages using pip
 
     ```bash
-    pip install ase==3.23.0 biopython==1.76 hydra==2.5 matplotlib==3.7.5 omegaconf==2.3.0 tensorboard==2.14.0 PyYAML sympy==1.12 tensorboardX==2.6.2.2 netCDF4==1.6.5
+    pip install ase==3.23.0 biopython==1.76 hydra==2.5 matplotlib==3.7.5 omegaconf==2.3.0 tensorboard==2.14.0 PyYAML sympy==1.12 tensorboardX==2.6.2.2 
+    pip install netCDF4==1.6.5
     pip install lightning==2.1.4 torch==1.12.1
     pip install schnetpack==2.0.4
+    ```
+
+    **If you are running on macOS, install netCDF4 using conda instead of pip**
+
+    ```bash
+    conda install -c conda-forge netCDF4
     ```
 
 ## Running QuantaMind MD Simulation
@@ -96,6 +104,43 @@ n_steps: 1000
 total_charge: 1
 ```
 
+## FAQ
+1. **ERROR: Could not find a version that satisfies the requirement torch==1.12.1+cpu**
+
+    The error comes from the fact that torch==1.12.1+cpu does not exist on PyPI, and PyTorch stopped distributing +cpu wheels after some versions. On **macOS** in particular, CPU-only wheels are just published as torch==1.12.1 without the +cpu suffix.
+
+    ```bash
+    pip install torch==1.12.1
+    ```
+
+2. **ValueError: did not find HDF5 headers**
+
+    This error is very common on **macOS** when trying to install netCDF4 from source:
+    ValueError: did not find HDF5 headers
+
+    That means the build system can’t find HDF5 and netCDF-C libraries/headers.
+    🔧 Fix Options
+    1. (Best) Use Conda prebuilt package
+
+    Since you’re already in a Conda env, just install netCDF4 via conda-forge instead of pip (it comes with HDF5 bundled):
+
+    ```bash
+    conda install -c conda-forge netCDF4
+    ```
+
+    This will pull in hdf5 and all dependencies cleanly.
+
+    2. (If you insist on pip) Install system libraries first
+
+    If you must install with pip, you’ll need to install HDF5 and netCDF-C via Homebrew first:
+    ```bash
+    brew install hdf5 netcdf
+    ```
+
+    Then point pip to the include/lib directories:
+    ```bash 
+    HDF5_DIR=/opt/homebrew pip install netCDF4
+    ```
 
 ## License
 
