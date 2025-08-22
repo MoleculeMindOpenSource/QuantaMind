@@ -26,9 +26,9 @@ To ensure compatibility and reproducibility, it is recommended to use the follow
 
 1. **Set Up a Virtual Environment with Python 3.8.20**
 
-    Depending on you, you can use either conda (step 1.1) or venv (step 1.2) to set up the environment.
+    You can use either conda (step 1.1) or venv (step 1.2) to set up the environment.
 
-    1.1 Use conda
+    1.1 **Use conda**
 
     You can use [conda](https://www.anaconda.com/docs/getting-started/miniconda/install) to manage your python environment.
 
@@ -37,7 +37,7 @@ To ensure compatibility and reproducibility, it is recommended to use the follow
     conda activate quantamind
     ```
     
-    1.2 Use venv
+    1.2 **Use venv**
 
    Ensure you have Python version 3.8.20 installed. You can download it from [python.org](https://www.python.org/downloads/release/python-3820/).
 
@@ -51,7 +51,9 @@ To ensure compatibility and reproducibility, it is recommended to use the follow
 
 2. **Install PyTorch 1.12.1**
 
-    **Linux and Windows**
+    Depending on your system, choose either step 2.1 or 2.2
+
+    2.1 **Linux and Windows**
 
     The following command installs PyTorch 1.12.1 with CUDA 11.6 support. Adjust the command if your CUDA version is different or if you want to install it CPU-only. Check [Pytorch Official Website](https://pytorch.org/) for details.
 
@@ -60,7 +62,7 @@ To ensure compatibility and reproducibility, it is recommended to use the follow
     pip install torch==1.12.1+${CUDA} --extra-index-url https://download.pytorch.org/whl/${CUDA}
     ```
 
-    **OSX**
+    2.2 **OSX**
     
     On macOS in particular, CPU-only wheels are just published as torch==1.12.1 without the +cpu suffix.
     ```bash
