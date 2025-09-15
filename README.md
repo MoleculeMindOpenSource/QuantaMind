@@ -1,7 +1,7 @@
 # QuantaMind MD enables protein modeling with ab initio accuracy
 
 ## Overview
-This is the offical code for the research article "QuantaMind MD enables protein modeling with ab initio accuracy". **The article is currently under review and the demo is only available for reviewers.** Stay tuned!
+This is the offical code for the research article "[QuantaMind MD enables protein modeling with ab initio accuracy](https://www.biorxiv.org/content/10.1101/2025.09.01.673405v2)". **The article is currently under review and the demo is only available for reviewers.** Stay tuned!
 
 ## Table of Contents
 1. [Installation](#installation)
