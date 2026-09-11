@@ -3,7 +3,7 @@
 ## Overview
 This is the official code for the research article "[Bridging the Accuracy-Speed Divide in Reactive Molecular Dynamics with QuantaMind MD](https://www.biorxiv.org/content/10.1101/2025.09.01.673405v2)".
 
-The QuantaMind model weights are **not included in this repository**. They are available to academic researchers on a non-commercial basis, upon request and subject to the [QuantaMind Non-Commercial Model Parameters Terms of Use](MODEL_PARAMETERS_TERMS_OF_USE.md). To request access, please email: [weights-request@moleculemind.com](mailto:weights-request@moleculemind.com).
+The QuantaMind model weights are not included in this repository. They are available to academic researchers on a non-commercial basis, upon request and subject to the [QuantaMind Non-Commercial Model Parameters Terms of Use](MODEL_PARAMETERS_TERMS_OF_USE.md). To request access, please email: [weights-request@moleculemind.com](mailto:weights-request@moleculemind.com).
 
 ## Table of Contents
 1. [Installation](#installation)
