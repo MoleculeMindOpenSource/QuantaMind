@@ -1,7 +1,7 @@
 # Bridging the Accuracy-Speed Divide in Reactive Molecular Dynamics with QuantaMind MD
 
 ## Overview
-This is the official code for the research article "[Bridging the Accuracy-Speed Divide in Reactive Molecular Dynamics with QuantaMind MD](https://www.biorxiv.org/content/10.1101/2025.09.01.673405v2)".
+This is the official code for the research article "[Bridging the Accuracy-Speed Divide in Reactive Molecular Dynamics with QuantaMind MD](https://doi.org/10.1126/sciadv.aeg3595)".
 
 The QuantaMind model weights are not included in this repository. They are available to academic researchers on a non-commercial basis, upon request and subject to the [QuantaMind Non-Commercial Model Parameters Terms of Use](MODEL_PARAMETERS_TERMS_OF_USE.md). To request access, please email: [weights-request@moleculemind.com](mailto:weights-request@moleculemind.com).
 
@@ -200,5 +200,16 @@ specific language governing permissions and limitations thereunder.
 ## Citation
 
 If you use QuantaMind in your research, please cite:
-
-[TODO: bib format]
+```bib
+@article{xia2026quantamind,
+  title = {Bridging the accuracy-speed divide in reactive molecular dynamics with QuantaMind MD},
+  author = {Xia, Song and Zhang, Deqiang and Shang, Xu and Xu, Jinbo},
+  journal = {Science Advances},
+  volume = {12},
+  number = {37},
+  pages = {eaeg3595},
+  year = {2026},
+  doi = {10.1126/sciadv.aeg3595},
+  publisher = {American Association for the Advancement of Science}
+}
+```
