@@ -3,7 +3,7 @@
 ## Overview
 This is the official code for the research article "[Bridging the Accuracy-Speed Divide in Reactive Molecular Dynamics with QuantaMind MD](https://www.biorxiv.org/content/10.1101/2025.09.01.673405v2)".
 
-The QuantaMind model weights are available to researchers upon request. To obtain a copy, please send an email to: [deqiangzhang@moleculemind.com](mailto:deqiangzhang@moleculemind.com).
+The QuantaMind model weights are **not included in this repository**. They are available to academic researchers on a non-commercial basis, upon request and subject to the [QuantaMind Non-Commercial Model Parameters Terms of Use](MODEL_PARAMETERS_TERMS_OF_USE.md). To request access, please email: [weights-request@moleculemind.com](mailto:weights-request@moleculemind.com).
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -133,7 +133,7 @@ total_charge: 1
     ValueError: did not find HDF5 headers
 
     That means the build system can’t find HDF5 and netCDF-C libraries/headers.
-    🔧 Fix Options
+    Fix Options
     1. (Best) Use Conda prebuilt package
 
     Since you’re already in a Conda env, just install netCDF4 via conda-forge instead of pip (it comes with HDF5 bundled):
@@ -158,14 +158,47 @@ total_charge: 1
 
 ## License
 
-This software is licensed under a dual-license model:
-1. Academic License: Free for use in academic research, teaching, and non-profit projects. 
-2. Commercial License: Required for any commercial or for-profit use.
+Source code and model parameters are governed by two separate sets of terms:
 
-Definitions:
-- Academic Use: Usage by educational institutions, students, and non-profit research projects.
-- Commercial Use: Usage for any profit-making activity or by commercial entities.
+**Source code.** The QuantaMind source code, documentation, and build/utility
+scripts are licensed under the Apache License, Version 2.0 (the "License");
+you may not use the source code except in compliance with the License. You
+may obtain a copy of the License at
+https://www.apache.org/licenses/LICENSE-2.0. See the [LICENSE](LICENSE) file
+for the complete notice.
 
-For more information or to obtain a commercial license, please contact us at license@moleculemind.com
+**Model parameters.** The QuantaMind model parameters, weights, and
+checkpoints are not covered by the Apache License and are not open
+source; you may not use them except in compliance with the
+[QuantaMind Non-Commercial Model Parameters Terms of Use](MODEL_PARAMETERS_TERMS_OF_USE.md)
+(the "Terms"). Access to the model parameters is available to academic
+researchers on a non-commercial basis, upon request. To request access,
+please email: [weights-request@moleculemind.com](mailto:weights-request@moleculemind.com).
+Commercial use of the model parameters requires an executed Commercial
+License Agreement; for commercial licensing enquiries please email:
+[licensing@moleculemind.com](mailto:licensing@moleculemind.com).
 
-Full License Text: See the [LICENSE](https://github.com/MoleculeMindOpenSource/QuantaMind/blob/main/LICENSE) file in this repository.
+Unless required by applicable law, QuantaMind and its output
+are distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied. You are solely responsible for determining
+the appropriateness of using QuantaMind, or using or distributing its source
+code, model parameters, or output, and assume any and all risks associated
+with such use or distribution and your exercise of rights and obligations
+under the relevant terms. QuantaMind outputs are predictions with varying
+levels of confidence and should be interpreted carefully. Use discretion
+before relying on, publishing, downloading, or otherwise using the
+QuantaMind outputs.
+
+QuantaMind and its output are for theoretical and
+scientific modeling only. They are not intended, validated, or approved for
+clinical use, and you should not use them for clinical purposes or rely on
+them for medical or other professional advice. Any content regarding those
+topics is provided for informational purposes only and is not a substitute
+for advice from a qualified professional. See the relevant terms for the
+specific language governing permissions and limitations thereunder.
+
+## Citation
+
+If you use QuantaMind in your research, please cite:
+
+[TODO: bib format]
