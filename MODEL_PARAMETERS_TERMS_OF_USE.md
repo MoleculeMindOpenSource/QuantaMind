@@ -57,7 +57,7 @@ group. This license does not grant you any right to use the Parameters for
 any Commercial Purpose.
 
 --------------------------------------------------------------------------------
-3. STRICT RESTRICTIONS
+3. RESTRICTIONS ON USE
 --------------------------------------------------------------------------------
 You agree NOT to do (or authorize, assist, or permit any third party to do)
 any of the following:
