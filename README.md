@@ -1,7 +1,9 @@
-# QuantaMind MD enables protein modeling with ab initio accuracy
+# Bridging the Accuracy-Speed Divide in Reactive Molecular Dynamics with QuantaMind MD
 
 ## Overview
-This is the offical code for the research article "[QuantaMind MD enables protein modeling with ab initio accuracy](https://www.biorxiv.org/content/10.1101/2025.09.01.673405v2)". **The article is currently under review and the demo is only available for reviewers.** Stay tuned!
+This is the official code for the research article "[Bridging the Accuracy-Speed Divide in Reactive Molecular Dynamics with QuantaMind MD](https://www.biorxiv.org/content/10.1101/2025.09.01.673405v2)".
+
+The QuantaMind model weights are available to researchers upon request. To obtain a copy, please send an email to: [deqiangzhang@moleculemind.com](mailto:deqiangzhang@moleculemind.com).
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -19,7 +21,7 @@ git clone https://github.com/MoleculeMindOpenSource/QuantaMind.git
 cd ./QuantaMind
 ```
 
-Then unzip `demo_data.zip` (**This file is currently only available for reviewers.**) and put all files in the `./demo` folder.
+Then download `demo_data.zip`, unzip it, and put all files in the `./demo` folder. Note that the demo requires the model weights, which are available upon request by email (see [Overview](#overview)).
 
 ### Install Python Environment
 To ensure compatibility and reproducibility, it is recommended to use the following Python environment setup. Follow the steps below to replicate the environment we used for this project:
@@ -166,4 +168,4 @@ Definitions:
 
 For more information or to obtain a commercial license, please contact us at license@moleculemind.com
 
-Full License Text: [TODO: Link to License Document]
+Full License Text: See the [LICENSE](https://github.com/MoleculeMindOpenSource/QuantaMind/blob/main/LICENSE) file in this repository.
