@@ -202,14 +202,14 @@ specific language governing permissions and limitations thereunder.
 If you use QuantaMind in your research, please cite:
 ```bib
 @article{xia2026quantamind,
-  title = {Bridging the accuracy-speed divide in reactive molecular dynamics with QuantaMind MD},
-  author = {Xia, Song and Zhang, Deqiang and Shang, Xu and Xu, Jinbo},
-  journal = {Science Advances},
-  volume = {12},
-  number = {37},
-  pages = {eaeg3595},
-  year = {2026},
-  doi = {10.1126/sciadv.aeg3595},
-  publisher = {American Association for the Advancement of Science}
+  title={Bridging the accuracy-speed divide in reactive molecular dynamics with QuantaMind MD},
+  author={Xia, Song and Zhang, Deqiang and Shang, Xu and Xu, Jinbo},
+  journal={Science Advances},
+  volume={12},
+  number={37},
+  pages={eaeg3595},
+  year={2026},
+  doi={10.1126/sciadv.aeg3595},
+  publisher={American Association for the Advancement of Science}
 }
 ```
