@@ -175,6 +175,6 @@ def create_md_calculator(cfg: MDConfig, md_neighborlist):
         total_charge=float(cfg.total_charge),
         md_config=cfg
     )
-    state_dict = torch.load(model_param_file, map_location="cuda" if torch.cuda.is_available() else "cpu")
+    state_dict = torch.load(model_param_file, map_location="cuda" if torch.cuda.is_available() else "cpu")["state_dict"]
     md_calculator.load_state_dict(state_dict)
     return md_calculator
