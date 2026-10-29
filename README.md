@@ -3,7 +3,7 @@
 ## Overview
 This is the official code for the research article "[Bridging the Accuracy-Speed Divide in Reactive Molecular Dynamics with QuantaMind MD](https://doi.org/10.1126/sciadv.aeg3595)".
 
-The QuantaMind model weights are not included in this repository. They are available to academic researchers on a non-commercial basis, upon request and subject to the [QuantaMind Non-Commercial Model Parameters Terms of Use](MODEL_PARAMETERS_TERMS_OF_USE.md). To request access, please email: [weights-request@moleculemind.com](mailto:weights-request@moleculemind.com).
+The QuantaMind model weights are not included in this repository. They are available to academic researchers on a non-commercial basis, upon request and subject to the [QuantaMind Non-Commercial Model Parameters Terms of Use](MODEL_PARAMETERS_TERMS_OF_USE.md). To request access, please email [weights-request@moleculemind.com](mailto:weights-request@moleculemind.com) and **CC your PI or adviser** on the request.
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -21,7 +21,7 @@ git clone https://github.com/MoleculeMindOpenSource/QuantaMind.git
 cd ./QuantaMind
 ```
 
-Then download `demo_data.zip`, unzip it, and put all files in the `./demo` folder. Note that the demo requires the model weights, which are available upon request by email (see [Overview](#overview)).
+Then download `demo_data.zip`, unzip it, and put all files in the `./demo` folder. Note that the demo requires the model weights, which are available upon request by email; when requesting access, **CC your PI or adviser** (see [Overview](#overview)).
 
 ### Install Python Environment
 To ensure compatibility and reproducibility, it is recommended to use the following Python environment setup. Follow the steps below to replicate the environment we used for this project:
@@ -173,7 +173,8 @@ source; you may not use them except in compliance with the
 [QuantaMind Non-Commercial Model Parameters Terms of Use](MODEL_PARAMETERS_TERMS_OF_USE.md)
 (the "Terms"). Access to the model parameters is available to academic
 researchers on a non-commercial basis, upon request. To request access,
-please email: [weights-request@moleculemind.com](mailto:weights-request@moleculemind.com).
+please email [weights-request@moleculemind.com](mailto:weights-request@moleculemind.com)
+and **CC your PI or adviser** on the request.
 Commercial use of the model parameters requires an executed Commercial
 License Agreement; for commercial licensing enquiries please email:
 [licensing@moleculemind.com](mailto:licensing@moleculemind.com).
